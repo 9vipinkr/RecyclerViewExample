@@ -11,7 +11,14 @@ import android.view.View;
 /**
  * Created by Vipin K R on 24-01-2017.
  */
+/*
+An implementation of RecyclerView.OnItemTouchListener that has empty method bodies and default return values.
 
+You may prefer to extend this class if you don't need to override all methods.
+Another benefit of using this class is future compatibility. As the interface may change, 
+we'll always provide a default implementation on this class so that your code won't break when you update 
+to a new version of the support library.
+*/
 public class RecyclerItemClickListener extends RecyclerView.SimpleOnItemTouchListener {
     private static final String TAG = "RecyclerItemClickListen";
     private final OnRecyclerClickListener recyclerClickListener;
